@@ -97,9 +97,21 @@ body {
 }
 
 @media (min-width: 901px) {
-  .logo, h1 {
-    display: inline-flex;
-    padding-left: 200px;
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+  }
+
+  header > div.logo {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+  }
+
+  header > h1 {
+    width: 75%;
   }
 
   .navbar {
@@ -113,14 +125,20 @@ body {
     display: none;
   }
 
-  ul.menu {
-    list-style-type: none;
+  .menu {
     display: flex;
     flex-direction: row;
+    justify-content: right;
+    list-style-type: none;
   }
 
   ul.menu > li {
-    padding-right: 50px;
+    margin-left: 60px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
   }
 
   section.product {
@@ -128,13 +146,12 @@ body {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    margin-left: 300px;
-    margin-right: 300px;
-  }
-
-  section.product > h2, p {
-    display: flex;
-    flex-direction: row;
+    padding-top: 2px;
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    width: 30%;
   }
 
   ul.social {
